@@ -1,0 +1,347 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #606060;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Styles for navigation bar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.navbar-brand h1 {
+    margin: 0;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin-right: 10px;
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+}
+.nav-link:hover,.sidebar-link:hover {
+    border-bottom:4px solid #ff0000;
+    transition: 0.2s;
+    color: #ffffff;
+}
+.menu-toggle:hover{
+    transition: 0.2s;
+    color: #ff0000;
+}
+/* Styles for sidebar */
+.sidebar {
+    background-color: #555;
+    color: #fff;
+    width: 500px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -500px;
+    transition: left 0.3s ease;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 110px;
+}
+
+.sidebar-menu li {
+    margin-bottom: 40px;
+    font-size: 35px;
+    margin-top: 50px;
+}
+.close-link {
+    position: absolute;
+    top: 50px;
+    left: 80%;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 50px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.close-link:hover{
+    color: #ff0000;
+}
+.sidebar-link {
+    color: #fff;
+    text-decoration: none;
+}
+/* Styles for menu toggle button */
+.menu-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Styles for homepage section */
+.home {
+    background-image: url(img/classroom.webp);
+    background-size: cover;
+    padding: 170px 0;
+    text-align: center;
+}
+
+.homepage-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.homepage-content h2 {
+    font-size: 37px;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.homepage-content h3 {
+    font-size:  27px;
+     color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1.1px rgb(0, 0, 0);
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+/* Styles for discussion section */
+.discuss {
+    margin-top: 50px;
+}
+.discuss h1, .about h1, .reflect h1{
+    text-align: center;
+}
+.prof1 {
+    width: 80px;
+    border-radius: 25%;
+    margin-right: 25px;
+    margin-bottom: 60px;
+    background-color: red;
+    box-shadow: 0 2px 4px rgb(255, 255, 255);
+}
+.prof2 {
+    width: 80px;
+    border-radius: 25%;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    background-color: rgb(28, 21, 209);
+    box-shadow: 0 2px 4px rgb(255, 255, 255);
+}
+.prof3 {
+    width: 80px;
+    border-radius: 25%;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    background-color: rgb(122, 242, 148);
+    box-shadow: 0 2px 4px rgb(255, 255, 255);
+    position: absolute;
+    top: 15px; /* Adjust the value to move the image up */
+    
+}
+
+.message-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* Stack messages vertically */
+}
+
+.message.self,
+.message1 {
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.message2, .message3 {
+    margin-left: auto;
+}
+    
+
+.message2 .message-content,.message3 .message-content  {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: space-around;
+    align-items: flex-end;
+}
+.message-content {
+    display: flex;
+    /* Use flexbox to align items */
+    align-items: center;
+    /* Center items vertically */
+    position: relative;
+    background-color: #1c1d21;
+    border-radius: 12px;
+    padding: 15px;
+    color: #fff;
+    box-shadow: 0 2px 4px rgb(235, 5, 5);
+    /* Box shadow */
+}
+
+.self .message-content {
+    align-self: flex-end;
+}
+
+.message-text {
+    position: relative;
+    line-height: 1.3;
+    z-index: 1;
+}
+.message-text span {
+    color: red;
+}
+
+.message-timestamp {
+    font-size: 12px;
+    color: #999;
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    right: 5px;
+}
+.phish{
+    width: 500px;
+    height: auto;
+    margin-bottom: 10px;
+    left: 200px;
+    position: relative;
+    border-radius: 12px;
+}
+
+.btn,.btn-music {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.1s ease-in-out; /* Added transform transition */
+}
+
+.btn:hover,.btn-music:hover {
+    background-color: #ff0000; /* Change background color on hover */
+    transform: scale(1.05); /* Scale up the button slightly */
+}
+
+
+/* Styles for footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.social-icons {
+    margin-top: 10px;
+    /* Adjust spacing between text and icons */
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+.social-icons img {
+    width: 40px;
+    height: auto;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #242222;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff0000;
+    /* Change scrollbar thumb color */
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .sidebar {
+        left: -150%;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    /* Hide text in navbar menu */
+    .navbar-menu li {
+        display: none;
+    }
+
+    /* Show text when menu is active */
+    .sidebar.active+.navbar-menu li {
+        display: block;
+    }
+    .home {
+        padding: 145px 0; /* Decrease top and bottom padding */
+    }
+
+    /* Adjust font sizes for the homepage content */
+    .homepage-content h2 {
+        font-size: 30px; /* Decrease font size for h2 headings */
+    }
+
+    .homepage-content h3 {
+        font-size: 20px; /* Decrease font size for h3 headings */
+    }
+    .message2,
+    .message3 {
+        margin-left: 0;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .message2 .message-content,
+     .message3 .message-content {
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .phish {
+        width: 400px;
+        left: 0;
+        }
+}
