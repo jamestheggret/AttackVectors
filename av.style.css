@@ -304,7 +304,7 @@ body {
     }
 
     .sidebar.active {
-        left: 0;
+        left: -40px;
     }
 
     /* Hide text in navbar menu */
@@ -344,4 +344,76 @@ body {
         width: 400px;
         left: 0;
         }
+}
+@media (max-width: 320px) {
+    .menu-toggle {
+        display: block;
+    }
+    .navbar{
+        width: 120%;
+    }
+    .sidebar {
+        left: -150%;
+    }
+
+    .sidebar.active {
+        left: -40px;
+        height: 100%;
+    }
+
+    /* Hide text in navbar menu */
+    .navbar-menu li {
+        display: none;
+    }
+
+    /* Show text when menu is active */
+    .sidebar.active+.navbar-menu li {
+        display: block;
+    }
+
+    .home {
+        padding: 120px 10px;
+        width: 140%;
+    }
+
+    /* Adjust font sizes for the homepage content */
+    .homepage-content h2 {
+        font-size: 30px;
+        /* Decrease font size for h2 headings */
+    }
+
+    .homepage-content h3 {
+        font-size: 20px;
+        /* Decrease font size for h3 headings */
+    }
+
+    .message-content{
+        width: 120%;
+    }
+    .discuss h1, .reflect h1, .about h1{
+        margin-left: 110px;
+    }
+    .message.self, .message1 {
+    margin-left: 40px;
+    }
+    .message2,
+    .message3 {
+        margin-left: 40px;
+        margin-right: 4px;
+        text-align: center;
+    }
+
+    .message2 .message-content,
+    .message3 .message-content {
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .phish {
+        width: 300px;
+        left: 0;
+    }
+    .footer{
+        width:450px;
+    }
 }
