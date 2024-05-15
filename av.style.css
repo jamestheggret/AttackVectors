@@ -141,7 +141,7 @@ body {
 .discuss {
     margin-top: 50px;
 }
-.discuss h1, .about h1, .reflect h1{
+.discuss h1, .about h1, .reflect h1, .references h1{
     text-align: center;
 }
 .prof1 {
@@ -211,7 +211,12 @@ body {
     box-shadow: 0 2px 4px rgb(235, 5, 5);
     /* Box shadow */
 }
-
+.message-content p{
+    text-align: center;
+}
+.message-content img{
+    text-align: center;
+}
 .self .message-content {
     align-self: flex-end;
 }
@@ -233,12 +238,15 @@ body {
     bottom: -20px;
     right: 5px;
 }
+.references .message-container{
+    text-align: end;
+}
 .phish{
     width: 500px;
     height: auto;
     margin-bottom: 10px;
-    left: 200px;
-    position: relative;
+    /*left: 200px;
+    position: relative;*/
     border-radius: 12px;
 }
 
