@@ -144,6 +144,13 @@ body {
 .discuss h1, .about h1, .reflect h1, .references h1{
     text-align: center;
 }
+.proff{
+    width: 300px;
+    border-radius: 25%;
+    margin-right: 25px;
+    background-color: red;
+    box-shadow: 0 2px 4px rgb(255, 255, 255);
+}
 .prof1 {
     width: 80px;
     border-radius: 25%;
@@ -336,6 +343,9 @@ body {
     .homepage-content h3 {
         font-size: 20px; /* Decrease font size for h3 headings */
     }
+    .proff{
+        width: 180px;
+    }
     .message2,
     .message3 {
         margin-left: 0;
@@ -358,15 +368,16 @@ body {
         display: block;
     }
     .navbar{
-        width: 120%;
+        width: 160%;
     }
     .sidebar {
         left: -150%;
     }
 
     .sidebar.active {
-        left: -40px;
+        left: -20px;
         height: 100%;
+        width: 100%;
     }
 
     /* Hide text in navbar menu */
@@ -380,7 +391,7 @@ body {
     }
 
     .home {
-        padding: 120px 10px;
+        padding: 120px 70px;
         width: 140%;
     }
 
@@ -394,12 +405,14 @@ body {
         font-size: 20px;
         /* Decrease font size for h3 headings */
     }
-
-    .message-content{
-        width: 120%;
+    .proff{
+        width: 120px;
     }
-    .discuss h1, .reflect h1, .about h1{
-        margin-left: 110px;
+    .message-content{
+        width: 180%;
+    }
+    .discuss h1, .reflect h1, .about h1, .references h1{
+        margin-left: 190px;
     }
     .message.self, .message1 {
     margin-left: 40px;
@@ -416,12 +429,14 @@ body {
         align-items: center;
         margin-bottom: 20px;
     }
-
+    .references .message-content{
+        width: 500px;
+    }
     .phish {
         width: 300px;
         left: 0;
     }
     .footer{
-        width:450px;
+        width:650px;
     }
 }
